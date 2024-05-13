@@ -2,3 +2,5 @@ cohere
 wikipedia
 langchain
 streamlit
+numpy
+scikit-learn
