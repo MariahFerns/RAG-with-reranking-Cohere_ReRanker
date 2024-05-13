@@ -191,7 +191,7 @@ st.text_area(
 # get api key
 result=[]
 with st.form('form', clear_on_submit=True):
-  question = st.text_area('Enter your question pertaining to Machine Learning: ', height=200)
+  question = st.text_area('Enter your question pertaining to Machine Learning: ')
 
   cohere_api_key = st.text_input('Enter your Cohere API key: ', type='password')
   submit = st.form_submit_button('Submit')
