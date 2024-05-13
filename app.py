@@ -179,13 +179,11 @@ def generate_response(api_key, question):
 
 st.title('🔖RAG with Re-Ranking')
 
-st.text_area(
-    '''
-    This app refers to the Wikipedia page on Machine Learning.
-    Ask a question pertaining to this topic to get the response.
-    The responses are re-ranked using Cohere's rerank model to fetch
-    the most relevant responses to your question.
-    '''
+st.write(    
+    "This app refers to the Wikipedia page on Machine Learning.\
+    Ask a question pertaining to this topic to get the response.\
+    The responses are re-ranked using Cohere's rerank model to fetch\
+    the most relevant responses to your question."    
 )
 
 # get api key
