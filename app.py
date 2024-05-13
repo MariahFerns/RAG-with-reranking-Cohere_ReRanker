@@ -113,7 +113,6 @@ def generate_response(api_key, question):
 
   # Sort in descending order of similarity
   sorted_indices = np.argsort(similarities)[::-1]
-  sorted_indices
   # store only top 10 indices
   top_indices = sorted_indices[:10]
 
