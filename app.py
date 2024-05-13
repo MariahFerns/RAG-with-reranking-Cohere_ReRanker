@@ -12,7 +12,8 @@ import cohere
 import wikipedia
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 import streamlit as st
-
+import numpy as np
+import sklearn
 
 def generate_response(api_key, question):
 
@@ -61,8 +62,6 @@ def generate_response(api_key, question):
 
   # Store embeddings in a vector database
   # using a simple vector DB: python dict where keys are indexes of chunks & values are numpy arrays of embeddings
-
-  import numpy as np
 
   vector_db = { i: np.array(embedding) for i, embedding in enumerate(embeddings)}
 
